@@ -20,7 +20,7 @@
 
         /* Floating Payment Container */
         .payment-container {
-            background: rgba(255, 255, 255, 0.9); /* Semi-transparent for better visibility */
+            background: rgba(255, 255, 255, 0.9);
             padding: 40px;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -30,32 +30,43 @@
             backdrop-filter: blur(10px);
         }
 
+        /* Membership Title */
         .membership-title {
             font-size: 1.6rem;
             font-weight: bold;
-            color: #2980b9;
-            margin-bottom: 20px;
-        }
-
-        .owner-title {
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: #2980c2;
+            color: #1E3A8A; /* Deep Blue */
             margin-bottom: 10px;
         }
 
+        /* Owner Title */
+        .owner-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #B91C1C; /* Dark Red */
+            margin-bottom: 10px;
+        }
+
+        /* Features Section */
         .features {
-            text-align: left;
             font-size: 1rem;
-            color: #333;
+            color: #16A34A; /* Green */
             margin-bottom: 20px;
-            padding-left: 20px;
+            text-align: center;
+            list-style-type: none;
+            padding: 0;
         }
 
         .features li {
             margin-bottom: 8px;
+            font-weight: 500;
+            background: rgba(22, 163, 74, 0.1);
+            padding: 8px;
+            border-radius: 8px;
+            display: inline-block;
+            width: 80%;
         }
 
+        /* Pricing Section */
         .pricing {
             font-size: 1.3rem;
             color: #333;
@@ -86,6 +97,7 @@
             display: inline-block;
         }
 
+        /* Payment Title */
         .payment-title {
             font-size: 1.4rem;
             font-weight: bold;
@@ -114,6 +126,10 @@
 
             .features {
                 font-size: 0.9rem;
+            }
+
+            .features li {
+                width: 100%;
             }
 
             .pricing {
