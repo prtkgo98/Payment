@@ -14,19 +14,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: url('https://source.unsplash.com/1600x900/?doctor,medical,hospital') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/1600x900/?doctor,medical,hospital') no-repeat center center fixed;
+            background-size: cover;
         }
 
         /* Floating Payment Container */
         .payment-container {
-            background: rgba(255, 255, 255, 0.9); /* Semi-transparent for background visibility */
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent for better visibility */
             padding: 40px;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             text-align: center;
             width: 100%;
-            max-width: 600px; /* Bigger and more premium */
-            backdrop-filter: blur(10px); /* Blur effect to integrate with background */
+            max-width: 600px;
+            backdrop-filter: blur(10px);
         }
 
         .membership-title {
@@ -67,7 +68,7 @@
         }
 
         .payment-title {
-            font-size: 1.4rem; /* Reduced size */
+            font-size: 1.4rem;
             font-weight: bold;
             color: #2c3e50;
             margin-bottom: 10px;
