@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET PG Membership Payment</title>
+    <style>
+        /* Reset and basic styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://source.unsplash.com/1600x900/?doctor,medical') no-repeat center center/cover;
+        }
+
+        .payment-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .membership-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+
+        .pricing {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .pricing .original {
+            text-decoration: line-through;
+            color: #e74c3c;
+            margin-right: 8px;
+        }
+
+        .pricing .discounted {
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .pricing .final {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2c3e50;
+            display: block;
+            margin-top: 5px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .membership-title {
+                font-size: 1.2rem;
+            }
+
+            .pricing {
+                font-size: 1rem;
+            }
+
+            .pricing .final {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Complete Your Payment</h1>
+        <div class="membership-title">NEET PG GROUP MEMBERSHIP</div>
+        <div class="pricing">
+            <span class="original">₹250</span> 
+            <span class="discounted">₹199</span> × 3  
+            <div class="final">Total Payable: ₹597</div>
+        </div>
+        <p>Secure your membership by completing the payment below. It will only take a few seconds.</p>
+        <form>
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Q99UqiuB7eg0Jc" async></script> 
+        </form>
+    </div>
+</body>
+</html>
