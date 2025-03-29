@@ -67,29 +67,26 @@
             font-size: 1.3rem;
             color: #333;
             margin-bottom: 20px;
-            text-align: center; /* Ensures central alignment */
-        }
-        
-        .pricing .original,
-        .pricing .discounted {
-            display: block; /* Moves each to a new line */
-            font-size: 1.2rem;
-            margin-bottom: 5px;
+            text-align: center;
         }
         
         .pricing .original {
             text-decoration: line-through;
             color: #e74c3c;
+            display: inline; /* Ensures it stays on the same line */
         }
 
         .pricing .damn {
             font-weight: bold;
             color: #27ae60;
+            display: inline; /* Ensures it stays on the same line */
         }
-        
+
         .pricing .discounted {
             font-weight: bold;
             color: #27ae60;
+            display: block; /* Keeps it separate from other pricing */
+            margin-bottom: 5px;
         }
         
         .pricing .final {
@@ -103,7 +100,6 @@
             display: block;
         }
 
-
         .payment-title {
             font-size: 1.4rem;
             font-weight: bold;
@@ -112,10 +108,10 @@
         }
         
         .subtext {
-            display: block;  /* Moves text to a new line */
-            font-size: 0.9rem; /* Slightly smaller font size */
-            color: #38BDF8; /* Darker blue for contrast */
-            margin-top: 4px; /* Adds a little space from the main text */
+            display: block;
+            font-size: 0.9rem;
+            color: #38BDF8;
+            margin-top: 4px;
         }
 
         p {
