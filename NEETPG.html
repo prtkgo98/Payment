@@ -19,24 +19,25 @@
 
         .payment-container {
             background: rgba(255, 255, 255, 0.9);
-            padding: 40px;
+            padding: 20px;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             text-align: center;
-            width: 100%;
-            max-width: 600px;
+            width: 90%; /* Ensures it fits on mobile */
+            max-width: 500px; /* Limits size on larger screens */
             backdrop-filter: blur(10px);
+            box-sizing: border-box; /* Prevents width overflow */
         }
 
         .membership-title {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: bold;
             color: #1E3A8A; /* Dark Blue */
             margin-bottom: 10px;
         }
 
         .owner-title {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: bold;
             color: #1E3A8A; /* Lighter Blue */
             margin-bottom: 10px;
@@ -58,13 +59,13 @@
             padding: 10px;
             border-radius: 8px;
             display: block;
-            width: 80%;
+            width: 90%;
             margin-left: auto;
             margin-right: auto;
         }
 
         .pricing {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: #333;
             margin-bottom: 20px;
             text-align: center;
@@ -73,24 +74,22 @@
         .pricing .original {
             text-decoration: line-through;
             color: #e74c3c;
-            display: inline; /* Ensures it stays on the same line */
         }
 
         .pricing .damn {
             font-weight: bold;
             color: #27ae60;
-            display: inline; /* Ensures it stays on the same line */
         }
 
         .pricing .discounted {
             font-weight: bold;
             color: #27ae60;
-            display: block; /* Keeps it separate from other pricing */
+            display: block;
             margin-bottom: 5px;
         }
         
         .pricing .final {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: bold;
             color: #2c3e50;
             margin-top: 10px;
@@ -101,7 +100,7 @@
         }
 
         .payment-title {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: bold;
             color: #2c3e50;
             margin-bottom: 10px;
@@ -115,7 +114,7 @@
         }
 
         p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #555;
             margin-bottom: 20px;
         }
@@ -124,13 +123,19 @@
             width: 100%;
         }
 
+        /* Mobile Optimizations */
         @media (max-width: 600px) {
+            .payment-container {
+                padding: 15px;
+                max-width: 95%;
+            }
+
             .membership-title {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
             }
 
             .owner-title {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
 
             .features {
@@ -146,16 +151,11 @@
             }
 
             .pricing .final {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
             }
 
             .payment-title {
                 font-size: 1.2rem;
-            }
-
-            .payment-container {
-                padding: 30px;
-                max-width: 90%;
             }
         }
     </style>
