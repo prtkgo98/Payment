@@ -67,21 +67,26 @@
             font-size: 1.3rem;
             color: #333;
             margin-bottom: 20px;
+            text-align: center; /* Ensures central alignment */
         }
-
+        
+        .pricing .original,
+        .pricing .discounted {
+            display: block; /* Moves each to a new line */
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
         .pricing .original {
             text-decoration: line-through;
             color: #e74c3c;
-            font-size: 1.2rem;
-            margin-right: 10px;
         }
-
+        
         .pricing .discounted {
             font-weight: bold;
             color: #27ae60;
-            font-size: 1.2rem;
         }
-
+        
         .pricing .final {
             font-size: 1.6rem;
             font-weight: bold;
@@ -90,8 +95,9 @@
             padding: 10px;
             background: rgba(44, 62, 80, 0.1);
             border-radius: 8px;
-            display: inline-block;
+            display: block;
         }
+
 
         .payment-title {
             font-size: 1.4rem;
@@ -170,8 +176,10 @@
         </ul>
 
         <div class="pricing">
-            <span class="original">₹299</span> 
+            <span class="original">₹299</span>
+            <br>
             <span class="discounted">₹233</span> × 3 months
+            <br>
             <div class="final">Total Payable: ₹699</div>
         </div>
         <div class="payment-title">Complete Your Payment</div>
