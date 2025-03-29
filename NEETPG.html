@@ -29,12 +29,6 @@
             backdrop-filter: blur(10px); /* Blur effect to integrate with background */
         }
 
-        h1 {
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
         .membership-title {
             font-size: 1.6rem;
             font-weight: bold;
@@ -72,6 +66,13 @@
             display: inline-block;
         }
 
+        .payment-title {
+            font-size: 1.4rem; /* Reduced size */
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
         p {
             font-size: 1.1rem;
             color: #555;
@@ -83,10 +84,6 @@
         }
 
         @media (max-width: 600px) {
-            h1 {
-                font-size: 1.6rem;
-            }
-
             .membership-title {
                 font-size: 1.4rem;
             }
@@ -99,6 +96,10 @@
                 font-size: 1.4rem;
             }
 
+            .payment-title {
+                font-size: 1.2rem;
+            }
+
             .payment-container {
                 padding: 30px;
                 max-width: 90%;
@@ -108,13 +109,13 @@
 </head>
 <body>
     <div class="payment-container">
-        <h1>Complete Your Payment</h1>
         <div class="membership-title">NEET PG GROUP MEMBERSHIP</div>
         <div class="pricing">
             <span class="original">₹250</span> 
-            <span class="discounted">₹199</span> × 3  
+            <span class="discounted">₹199</span> × 3 months
             <div class="final">Total Payable: ₹597</div>
         </div>
+        <div class="payment-title">Complete Your Payment</div>
         <p>Secure your membership by completing the payment below. It will only take a few seconds.</p>
         <form>
             <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Q99UqiuB7eg0Jc" async></script> 
